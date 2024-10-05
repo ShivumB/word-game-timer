@@ -1,0 +1,40 @@
+main, body, head {
+    overflow: hidden;
+    margin: 0;
+}
+
+.textbox {
+    outline: none;
+    border: black;
+    color: black;
+    text-align: left;
+    border-bottom: 2px solid black;
+    
+    background-color: transparent;
+  
+    font-size:xx-large;
+    font-family: 'Roboto';
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  .s-textbox {
+    outline: none;
+    border: black;
+    color: black;
+    text-align: left;
+    border-bottom: 1px solid black;
+    
+    background-color: transparent;
+  
+    font-size:x-large;
+    font-family: 'Roboto';
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+  }

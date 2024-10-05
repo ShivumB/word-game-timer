@@ -235,22 +235,22 @@ function draw() {
             drawClock(currentPlayerTimes[0], currentPlayers[0], currentPlayers[0], true);
 
             if(mouseX > width/2 - 210 && mouseX < width/2 - 210 + 190
-                && mouseY > height/4 + 270 && mouseY < height/4 + 270 + 50) {
+                && mouseY > height/2 + 120 && mouseY < height/2 + 120 + 50) {
                 fill(180);
             } else fill (255);
-            rect(width/2 - 210, height/4 + 270, 190, 50, 5);
+            rect(width/2 - 210, height/2 + 120, 190, 50, 5);
 
             if(mouseX > width/2 && mouseX < width/2 + 190
-                && mouseY > height/4 + 270 && mouseY < height/4 + 270 + 50) {
+                && mouseY > height/2 + 120 && mouseY < height/2 + 120 + 50) {
                 fill(180);
             } else fill (255);
-            rect(width/2, height/4 + 270, 190, 50, 5);
+            rect(width/2, height/2 + 120, 190, 50, 5);
             
             textSize(32);
             fill(0);
             textAlign(CENTER, CENTER);
-            text("play again", width/2 - 210 + 95, height/4 + 270 + 25);
-            text("title", width/2 + 95, height/4 + 270 + 25);
+            text("play again", width/2 - 210 + 95, height/2 + 120 + 25);
+            text("title", width/2 + 95, height/2 + 120 + 25);
         break;
     }
 }
@@ -320,13 +320,13 @@ function mouseClicked() {
         }
     } else if(scene == "win") {
         if(mouseX > width/2 - 210 && mouseX < width/2 - 210 + 190
-            && mouseY > height/4 + 270 && mouseY < height/4 + 270 + 50) { 
+            && mouseY > height/2 + 120 && mouseY < height/2 + 120 + 50) { 
             scene = "transition";
             transitionStartTime = millis();
         }
         
         else if(mouseX > width/2 && mouseX < width/2 + 190
-            && mouseY > height/4 + 270 && mouseY < height/4 + 270 + 50) {
+            && mouseY > height/2 + 120 && mouseY < height/2 + 120 + 50) {
             scene = "title";
 
             for(let i = 0; i < boxes.length; i++) boxes[i].show();
